@@ -20,10 +20,17 @@ public class Main {
         final char CHAR_VAR = 'A';
         boolean booleanVar = true;
 
+<<<<<<< HEAD
         imprimeValores(BYTE_VAR, shortVar, intVar, LONG_VAR, floatVar, doubleVar, CHAR_VAR, booleanVar);
     }
 
     public static void imprimeValores(byte byteVar, short shortVar, int intVar, long longVar, float floatVar, double doubleVar, char charVar, boolean booleanVar) {
+=======
+        imprimirValores(BYTE_VAR, shortVar, intVar, LONG_VAR, floatVar, doubleVar, CHAR_VAR, booleanVar);
+    }
+
+    public static void imprimirValores(byte byteVar, short shortVar, int intVar, long longVar, float floatVar, double doubleVar, char charVar, boolean booleanVar) {
+>>>>>>> 79e0bdd (Exercitando a declaração de variáveis e constantes)
         System.out.println("BYTE: " + byteVar);
         System.out.println("SHORT: " + shortVar);
         System.out.println("INT: " + intVar);
