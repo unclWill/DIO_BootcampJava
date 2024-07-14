@@ -9,7 +9,7 @@ public class Main {
         System.out.printf("Saldo: R$ %.2f%n", caixaEletronico.getSaldo());
 
         // RESULTADO ESCOLAR.
-        ResultadoEscolar resultadoEscolar = new ResultadoEscolar(8);
+        ResultadoEscolar resultadoEscolar = new ResultadoEscolar(6);
         System.out.println("Estado de aprovação: " + resultadoEscolar.estadoAprovacao());
 
     }

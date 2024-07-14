@@ -18,6 +18,6 @@ public class ResultadoEscolar {
     }
 
     public String estadoAprovacao() {
-        return nota >= 7 ? "Aprovado" : "Reprovado";
+        return nota >= 7 ? "Aprovado" : nota >= 5 && nota < 7 ? "Recuperação" : "Reprovado";
     }
 }
