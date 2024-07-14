@@ -12,5 +12,9 @@ public class Main {
         ResultadoEscolar resultadoEscolar = new ResultadoEscolar(6);
         System.out.println("Estado de aprovação: " + resultadoEscolar.estadoAprovacao());
 
+        // SISTEMA DE MEDIDA.
+        SistemaMedida sistemaMedida = new SistemaMedida("P");
+        System.out.println("Medida: " + sistemaMedida.determinarMedidaPorSigla());
+
     }
 }
