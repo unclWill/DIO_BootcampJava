@@ -18,10 +18,6 @@ public class ResultadoEscolar {
     }
 
     public String estadoAprovacao() {
-        if (nota >= 7) {
-            return "Aprovado";
-        } else {
-            return "Reprovado";
-        }
+        return nota >= 7 ? "Aprovado" : "Reprovado";
     }
 }
