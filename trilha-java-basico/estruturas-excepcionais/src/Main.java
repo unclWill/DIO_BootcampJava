@@ -1,3 +1,4 @@
+import java.text.NumberFormat;
 import java.util.InputMismatchException;
 import java.util.Locale;
 import java.util.Scanner;
@@ -6,6 +7,12 @@ public class Main {
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in).useLocale(Locale.US);
         AboutMe aboutMe = new AboutMe();
+        
+        ExemploExcecao exemploExcecao = new ExemploExcecao();
+        exemploExcecao.setValor(Double.valueOf("a1.75"));
+        exemploExcecao.setValor(NumberFormat.getInstance().parse("a1.75"));
+
+        System.out.println("Exemplo de exceção: " + exemploExcecao.getValor());
 
         try {
             aboutMe = lerDados(sc, aboutMe);
