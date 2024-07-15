@@ -1,3 +1,5 @@
+import excecoes.ParametrosInvalidosException;
+
 /**
  * <h1>Contador</h1>
  * A classe Contador é responsável por raalizar uma contagem entre dois números inteiros.
