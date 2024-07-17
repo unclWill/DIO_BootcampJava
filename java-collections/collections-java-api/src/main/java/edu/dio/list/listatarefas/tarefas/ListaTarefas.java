@@ -1,7 +1,6 @@
-package edu.dio.listatarefas;
+package edu.dio.list.listatarefas.tarefas;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 public class ListaTarefas {
@@ -15,8 +14,8 @@ public class ListaTarefas {
         listaTarefas.add(new Tarefa(descricao));
     }
 
+    // Utilizando abordagem da lamba expression.
     public void removerTarefa(String descricao) {
-        // Utilizando abordagem da lamba expression.
         listaTarefas.removeIf(t -> t.getDescricao().equals(descricao));
     }
 

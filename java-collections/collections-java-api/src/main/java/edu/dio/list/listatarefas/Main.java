@@ -1,10 +1,7 @@
-package edu.dio;
+package edu.dio.list.listatarefas;
 
-import edu.dio.listatarefas.ListaTarefas;
-import edu.dio.listatarefas.Tarefa;
-
-import java.util.List;
-
+import edu.dio.list.listatarefas.tarefas.ListaTarefas;
+import edu.dio.list.listatarefas.tarefas.Tarefa;
 
 public class Main {
     public static void main(String[] args) {
@@ -16,19 +13,19 @@ public class Main {
         listaTarefas.adicionarTarefa("Assistir o Senhor dos Anéis: O Retorno do Rei");
 
         // Exibindo as tarefas.
-        percorrerListaDeTarefas(listaTarefas.obterDescricoesTarefas(), listaTarefas);
+        percorrerListaDeTarefas(listaTarefas);
 
         // Removendo uma tarefa.
         listaTarefas.removerTarefa("Estudar Java");
 
         // Exibindo as tarefas após a remoção.
         System.out.println();
-        percorrerListaDeTarefas(listaTarefas.obterDescricoesTarefas(), listaTarefas);
+        percorrerListaDeTarefas(listaTarefas);
     }
 
-    public static void percorrerListaDeTarefas(List<Tarefa> listaTarefas, ListaTarefas tarefas) {
+    public static void percorrerListaDeTarefas(ListaTarefas tarefas) {
         System.out.printf("Total de tarefas a fazer: %d%n", tarefas.obterNumeroTotalDeTarefas());
-        for (Tarefa t : listaTarefas) {
+        for (Tarefa t : tarefas.obterDescricoesTarefas()) {
             System.out.println(t.getDescricao());
         }
     }
