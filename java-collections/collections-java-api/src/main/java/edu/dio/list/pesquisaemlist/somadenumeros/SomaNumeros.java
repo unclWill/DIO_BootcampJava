@@ -1,4 +1,4 @@
-package edu.dio.list.somadenumeros;
+package edu.dio.list.pesquisaemlist.somadenumeros;
 
 import java.util.ArrayList;
 import java.util.List;

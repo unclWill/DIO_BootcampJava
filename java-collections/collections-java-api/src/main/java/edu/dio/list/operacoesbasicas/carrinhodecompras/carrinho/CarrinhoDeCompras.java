@@ -1,4 +1,4 @@
-package edu.dio.list.carrinhodecompras.carrinho;
+package edu.dio.list.operacoesbasicas.carrinhodecompras.carrinho;
 
 import java.util.ArrayList;
 import java.util.List;

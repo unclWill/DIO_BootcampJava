@@ -1,7 +1,7 @@
-package edu.dio.list.listatarefas;
+package edu.dio.list.operacoesbasicas.listatarefas;
 
-import edu.dio.list.listatarefas.tarefas.ListaTarefas;
-import edu.dio.list.listatarefas.tarefas.Tarefa;
+import edu.dio.list.operacoesbasicas.listatarefas.tarefas.ListaTarefas;
+import edu.dio.list.operacoesbasicas.listatarefas.tarefas.Tarefa;
 
 public class Main {
     public static void main(String[] args) {

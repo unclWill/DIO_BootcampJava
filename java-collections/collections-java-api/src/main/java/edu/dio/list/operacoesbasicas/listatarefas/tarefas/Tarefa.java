@@ -1,4 +1,4 @@
-package edu.dio.list.listatarefas.tarefas;
+package edu.dio.list.operacoesbasicas.listatarefas.tarefas;
 
 public class Tarefa {
     private String descricao;

@@ -1,10 +1,9 @@
-package edu.dio.list.catalogodelivros;
+package edu.dio.list.pesquisaemlist.catalogodelivros;
 
-import edu.dio.list.catalogodelivros.livros.CatalogoLivros;
-import edu.dio.list.catalogodelivros.livros.Livro;
+import edu.dio.list.pesquisaemlist.catalogodelivros.livros.CatalogoLivros;
+import edu.dio.list.pesquisaemlist.catalogodelivros.livros.Livro;
 
 import java.util.List;
-import java.util.function.Predicate;
 
 public class Main {
     public static void main(String[] args) {

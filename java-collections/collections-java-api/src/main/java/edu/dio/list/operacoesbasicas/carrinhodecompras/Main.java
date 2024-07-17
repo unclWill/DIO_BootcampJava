@@ -1,6 +1,6 @@
-package edu.dio.list.carrinhodecompras;
+package edu.dio.list.operacoesbasicas.carrinhodecompras;
 
-import edu.dio.list.carrinhodecompras.carrinho.CarrinhoDeCompras;
+import edu.dio.list.operacoesbasicas.carrinhodecompras.carrinho.CarrinhoDeCompras;
 
 public class Main {
     public static void main(String[] args) {
