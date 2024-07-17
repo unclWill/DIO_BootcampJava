@@ -1,6 +1,7 @@
 package edu.dio.list.listatarefas.tarefas;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class ListaTarefas {
@@ -14,21 +15,33 @@ public class ListaTarefas {
         listaTarefas.add(new Tarefa(descricao));
     }
 
-    // Utilizando abordagem da lamba expression.
+    // Utilizando a abordagem mais simplificada.
     public void removerTarefa(String descricao) {
-        listaTarefas.removeIf(t -> t.getDescricao().equals(descricao));
+        List<Tarefa> tarefasParaRemover = new ArrayList<>();
+        for (Tarefa t: listaTarefas) {
+            if (t.getDescricao().equalsIgnoreCase(descricao)) {
+                tarefasParaRemover.add(t);
+            }
+        }
+
+        listaTarefas.removeAll(tarefasParaRemover);
     }
 
-      // Utilizando abordagem do Iterator.
-//    public void removerTarefa(String descricao) {
-//        Iterator<Tarefa> iterTarefa = listaTarefas.iterator();
-//        while (iterTarefa.hasNext()) {
-//            Tarefa t = iterTarefa.next();
-//            if (t.getDescricao().equals(descricao)) {
-//                iterTarefa.remove();
-//            }
-//        }
-//    }
+    // Utilizando a abordagem da lambda expression.
+    public void removerTarefaComLambda(String descricao) {
+        listaTarefas.removeIf(t -> t.getDescricao().equalsIgnoreCase(descricao));
+    }
+
+    // Utilizando a abordagem do Iterator.
+    public void removerTarefaComIterator(String descricao) {
+        Iterator<Tarefa> iterTarefa = listaTarefas.iterator();
+        while (iterTarefa.hasNext()) {
+            Tarefa t = iterTarefa.next();
+            if (t.getDescricao().equalsIgnoreCase(descricao)) {
+                iterTarefa.remove();
+            }
+        }
+    }
 
     public int obterNumeroTotalDeTarefas() {
         return listaTarefas.size();
