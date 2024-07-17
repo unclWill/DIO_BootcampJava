@@ -1,9 +1,14 @@
-package edu.dio.list.carrinhodecompras;
+package edu.dio.list.carrinhodecompras.carrinho;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class CarrinhoDeCompras {
     private List<Item> listaItens;
+
+    public CarrinhoDeCompras() {
+        listaItens = new ArrayList<>();
+    }
 
     public void adicionarItem(String nome, double preco, int quantidade) {
         listaItens.add(new Item(nome, preco, quantidade));
@@ -17,7 +22,7 @@ public class CarrinhoDeCompras {
         double valorTotal = 0.0;
         if (!listaItens.isEmpty()) {
             for (Item i : listaItens) {
-                valorTotal += i.getPreco();
+                valorTotal += i.getPreco() * i.getQuantidade();
             }
         }
         return valorTotal;
