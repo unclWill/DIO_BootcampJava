@@ -1,4 +1,4 @@
-package edu.dio.list.ordenacao.ordenacaodepessoas;
+package edu.dio.list.ordenacao.ordenacaodepessoas.pessoas;
 
 import edu.dio.list.ordenacao.ordenacaodepessoas.utils.ComparatorPorAltura;
 

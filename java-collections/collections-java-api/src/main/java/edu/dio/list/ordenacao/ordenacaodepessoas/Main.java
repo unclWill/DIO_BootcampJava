@@ -1,5 +1,8 @@
 package edu.dio.list.ordenacao.ordenacaodepessoas;
 
+import edu.dio.list.ordenacao.ordenacaodepessoas.pessoas.OrdenacaoPessoas;
+import edu.dio.list.ordenacao.ordenacaodepessoas.pessoas.Pessoa;
+
 import java.util.List;
 
 public class Main {

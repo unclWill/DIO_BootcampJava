@@ -1,6 +1,6 @@
 package edu.dio.list.ordenacao.ordenacaodepessoas.utils;
 
-import edu.dio.list.ordenacao.ordenacaodepessoas.Pessoa;
+import edu.dio.list.ordenacao.ordenacaodepessoas.pessoas.Pessoa;
 
 import java.util.Comparator;
 
