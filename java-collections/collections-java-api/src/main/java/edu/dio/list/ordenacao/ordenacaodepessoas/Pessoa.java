@@ -1,6 +1,4 @@
-package edu.dio.list.ordenacaoemlist.ordenacaodepessoas;
-
-import java.util.Comparator;
+package edu.dio.list.ordenacao.ordenacaodepessoas;
 
 public class Pessoa implements Comparable<Pessoa> {
     private String nome;

@@ -1,6 +1,6 @@
-package edu.dio.list.ordenacaoemlist.ordenacaodepessoas;
+package edu.dio.list.ordenacao.ordenacaodepessoas;
 
-import edu.dio.list.ordenacaoemlist.ordenacaodepessoas.utils.ComparatorPorAltura;
+import edu.dio.list.ordenacao.ordenacaodepessoas.utils.ComparatorPorAltura;
 
 import java.util.ArrayList;
 import java.util.Collections;

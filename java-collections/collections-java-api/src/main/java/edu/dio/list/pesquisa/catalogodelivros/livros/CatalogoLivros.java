@@ -1,4 +1,4 @@
-package edu.dio.list.pesquisaemlist.catalogodelivros.livros;
+package edu.dio.list.pesquisa.catalogodelivros.livros;
 
 import java.util.ArrayList;
 import java.util.List;

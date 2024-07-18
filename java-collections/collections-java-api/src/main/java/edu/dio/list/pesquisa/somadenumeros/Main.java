@@ -1,4 +1,4 @@
-package edu.dio.list.pesquisaemlist.somadenumeros;
+package edu.dio.list.pesquisa.somadenumeros;
 
 public class Main {
     public static void main(String[] args) {

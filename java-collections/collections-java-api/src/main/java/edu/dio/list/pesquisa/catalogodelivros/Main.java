@@ -1,7 +1,7 @@
-package edu.dio.list.pesquisaemlist.catalogodelivros;
+package edu.dio.list.pesquisa.catalogodelivros;
 
-import edu.dio.list.pesquisaemlist.catalogodelivros.livros.CatalogoLivros;
-import edu.dio.list.pesquisaemlist.catalogodelivros.livros.Livro;
+import edu.dio.list.pesquisa.catalogodelivros.livros.CatalogoLivros;
+import edu.dio.list.pesquisa.catalogodelivros.livros.Livro;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package edu.dio.list.ordenacaoemlist.ordenacaodenumeros;
+package edu.dio.list.ordenacao.ordenacaodenumeros;
 
 import java.util.List;
 
