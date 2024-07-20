@@ -35,13 +35,7 @@ public class Dicionario {
     public String pesquisarPorPalavra(String palavra) {
         String descricao = null;
         if (!mapaPalavras.isEmpty()) {
-            for (Map.Entry<String, String> p : mapaPalavras.entrySet()) {
-                String chave = p.getKey();
-                String desc = p.getValue();
-                if (chave.equals(palavra)) {
-                    descricao = desc;
-                }
-            }
+            descricao = mapaPalavras.get(palavra);
         }
         return String.format("%s: %s", palavra, descricao);
     }

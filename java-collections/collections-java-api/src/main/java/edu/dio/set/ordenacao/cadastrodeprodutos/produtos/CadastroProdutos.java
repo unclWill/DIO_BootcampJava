@@ -4,7 +4,6 @@ import edu.dio.set.ordenacao.cadastrodeprodutos.utils.ComparatorPorCodigo;
 import edu.dio.set.ordenacao.cadastrodeprodutos.utils.ComparatorPorPreco;
 import edu.dio.set.ordenacao.cadastrodeprodutos.utils.ComparatorPorQuantidade;
 
-import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.TreeSet;

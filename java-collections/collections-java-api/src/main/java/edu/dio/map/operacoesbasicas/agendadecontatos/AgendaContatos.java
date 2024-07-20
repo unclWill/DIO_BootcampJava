@@ -32,18 +32,11 @@ public class AgendaContatos {
         }
     }
 
-    public void pesquisarPorNome(String nome) {
+    public Integer pesquisarPorNome(String nome) {
+        Integer telefone = null;
         if (!mapaContatos.isEmpty()) {
-            for (Map.Entry<String, Integer> contato : mapaContatos.entrySet()) {
-                String nomeContato = contato.getKey();
-                int telefone = contato.getValue();
-                if (nomeContato.equals(nome)) {
-                    System.out.printf("Nome: %s | Telefone: %d%n", nomeContato, telefone);
-                    break;
-                }
-            }
-        } else {
-            System.out.println("O contato buscado não foi encontrado!");
+            telefone = mapaContatos.get(nome);
         }
+        return telefone;
     }
 }

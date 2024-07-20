@@ -18,6 +18,6 @@ public class Main {
 
         // Pesquisando por um contato.
         System.out.println("\nContato pesquisado:");
-        agenda.pesquisarPorNome("Alanis");
+        System.out.println(agenda.pesquisarPorNome("Alanis"));
     }
 }
