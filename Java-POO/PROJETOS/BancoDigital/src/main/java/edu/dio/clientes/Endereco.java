@@ -29,36 +29,48 @@ public class Endereco {
     public void setRua(String rua) {
         if (rua != null && !rua.isBlank()) {
             this.rua = rua;
+        } else {
+            throw new IllegalArgumentException("O nome da rua não pode estar nulo ou vazio!");
         }
     }
 
     public void setNumero(String numero) {
         if (numero != null && !numero.isBlank()) {
             this.numero = numero;
+        } else {
+            throw new IllegalArgumentException("O número da residência não pode estar nulo ou vazio!");
         }
     }
 
     public void setCep(String cep) {
         if (cep != null && !cep.isBlank()) {
             this.cep = cep;
+        } else {
+            throw new IllegalArgumentException("O CEP da rua não pode estar nulo ou vazio!");
         }
     }
 
     public void setBairro(String bairro) {
         if (bairro != null && !bairro.isBlank()) {
             this.bairro = bairro;
+        } else {
+            throw new IllegalArgumentException("O nome da bairro não pode estar nulo ou vazio!");
         }
     }
 
     public void setCidade(String cidade) {
         if (cidade != null && !cidade.isBlank()) {
             this.cidade = cidade;
+        } else {
+            throw new IllegalArgumentException("O nome da cidade não pode estar nulo ou vazio!");
         }
     }
 
     public void setUf(String uf) {
         if (uf != null && !uf.isBlank()) {
             this.uf = uf;
+        } else {
+            throw new IllegalArgumentException("A sigla da UF não pode estar nula ou vazia!");
         }
     }
 }

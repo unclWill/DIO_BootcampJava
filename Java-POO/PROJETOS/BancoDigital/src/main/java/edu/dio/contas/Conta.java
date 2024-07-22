@@ -65,12 +65,16 @@ public abstract class Conta {
     private void setAgencia(int agencia) {
         if (agencia > 0) {
             this.agencia = agencia;
+        } else {
+            throw new IllegalArgumentException("A agência deve ter um número positivo!");
         }
     }
 
     private void setNumero(int numero) {
         if (numero > 0) {
             this.numero = numero;
+        } else {
+            throw new IllegalArgumentException("A conta deve ter um número positivo!s");
         }
     }
 
@@ -78,7 +82,7 @@ public abstract class Conta {
         if (cliente != null) {
             this.cliente = cliente;
         } else {
-            throw new IllegalArgumentException("O cliente estava nulo!");
+            throw new IllegalArgumentException("O cliente não pode ser nulo!");
         }
     }
 }

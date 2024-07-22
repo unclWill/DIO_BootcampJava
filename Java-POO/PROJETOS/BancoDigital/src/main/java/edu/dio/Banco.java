@@ -24,12 +24,16 @@ public class Banco {
     public void addConta(Conta conta) {
         if (conta != null) {
             this.contas.add(conta);
+        } else {
+            throw new IllegalArgumentException("A conta não pode estar nula!s");
         }
     }
 
     public void addContas(List<Conta> novasContas) {
         if (!novasContas.isEmpty()) {
             this.contas.addAll(novasContas);
+        } else {
+            throw new IllegalArgumentException("A lista de contas não pode estar nula!");
         }
     }
 
@@ -58,6 +62,8 @@ public class Banco {
     private void setNome(String nome) {
         if (nome != null && !nome.isBlank()) {
             this.nome = nome;
+        } else {
+            throw new IllegalArgumentException("O nome não pode ser nulo ou vazio!");
         }
     }
 }

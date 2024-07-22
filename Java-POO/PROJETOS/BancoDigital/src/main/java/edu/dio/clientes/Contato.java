@@ -21,7 +21,7 @@ public class Contato {
         if (numeroTelefone.length() == 10 || numeroTelefone.length() == 11) {
             this.telefone = telefone;
         } else {
-            throw new IllegalArgumentException("O número do telefone deve conter 11 ou 11 dígitos");
+            throw new IllegalArgumentException("O número do telefone deve conter 10 ou 11 dígitos");
         }
     }
 
