@@ -13,9 +13,8 @@
       
     
   <modules>  
-    <!-- Adicione módulos aqui --> 
-  <module></module>
-      
+      <!-- Adicione módulos aqui --> 
+    <module>path/to/module</module>
   </modules>
     
   <properties>
