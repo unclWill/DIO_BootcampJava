@@ -10,6 +10,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 public class GeradorDeNumerosTest {
     @Test
     void testaGeracaoComTamanhoDefinido() {
+        // Para utilizar a classe MockedStatic é necessário definir a dependência mockito-inline no pom.xml.
         MockedStatic<GeradorDeNumeros> mockedStatic = Mockito.mockStatic(GeradorDeNumeros.class);
     }
 }
