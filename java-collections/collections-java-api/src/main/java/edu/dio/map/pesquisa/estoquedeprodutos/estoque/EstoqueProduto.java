@@ -2,7 +2,6 @@ package edu.dio.map.pesquisa.estoquedeprodutos.estoque;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.TreeMap;
 
 public class EstoqueProduto {
     private Map<Long, Produto> mapaProdutos;
