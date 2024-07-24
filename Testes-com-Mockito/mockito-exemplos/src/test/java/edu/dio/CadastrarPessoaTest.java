@@ -3,6 +3,7 @@ package edu.dio;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.ArgumentMatchers;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
@@ -24,9 +25,23 @@ public class CadastrarPessoaTest {
         Mockito.when(apiDosCorreios.buscaDadosComBaseNoCep("12345678")).thenReturn(dadosLocalizacao);
         Pessoa p = cadastrarPessoa.cadastrarPessoa("Rafaela Silva", "33456400", LocalDate.now(), "12345678");
 
-        Assertions.assertEquals("Rafaela Silva", p.getNome());
-        Assertions.assertEquals("33456400", p.getDocumento());
-        Assertions.assertEquals("MG", p.getEndereco().getUf());
-        Assertions.assertEquals("Apto", p.getEndereco().getComplemento());
+        DadosLocalizacao enderecoRafaela = p.getEndereco();
+        Assertions.assertEquals(dadosLocalizacao.getBairro(), enderecoRafaela.getBairro());
+        Assertions.assertEquals(dadosLocalizacao.getCidade(), enderecoRafaela.getCidade());
+        Assertions.assertEquals(dadosLocalizacao.getUf(), enderecoRafaela.getUf());
+    }
+
+    @Test
+    void lancarExceptionQuandoChamarApiDosCorreios() {
+        // Pode ser feito destea forma:
+        Mockito.when(apiDosCorreios.buscaDadosComBaseNoCep(ArgumentMatchers.anyString())).thenThrow(IllegalArgumentException.class);
+
+        // Ou desta:
+//        Mockito.doThrow(IllegalArgumentException.class)
+//                .when(apiDosCorreios)
+//                .buscaDadosComBaseNoCep(ArgumentMatchers.anyString());
+
+        Assertions.assertThrows(IllegalArgumentException.class,
+                () -> cadastrarPessoa.cadastrarPessoa("Rafaela Silva", "33456400", LocalDate.now(), "12345678"));
     }
 }

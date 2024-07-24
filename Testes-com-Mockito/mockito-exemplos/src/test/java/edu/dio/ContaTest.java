@@ -30,4 +30,10 @@ public class ContaTest {
         // Verifica se a verificação de saldo foi chamada 3 vezes.
         Mockito.verify(conta, Mockito.times(3)).validaSaldo(ArgumentMatchers.anyDouble());
     }
+
+    @Test
+    void retornaTrueParaQualquerValorNaValidacaoDeSaldo() {
+        Mockito.doNothing().when(conta).validaSaldo(ArgumentMatchers.anyDouble());
+        conta.validaSaldo(3500D);
+    }
 }
